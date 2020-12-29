@@ -1,0 +1,52 @@
+/************ 공통사항 *************/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans&family=Overpass:wght@100;200;300;400;600&display=swap'); 
+/* 
+font-family: 'DM Serif Display', serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Overpass', sans-serif;
+*/
+* {box-sizing: border-box;}
+html, body {position: relative;}
+ul,li {list-style: none;}
+a {text-decoration: none;  color: inherit;}
+b, strong {font-weight: bold;}
+
+.w-100 {width: 100%;}
+.mw-100 {max-width: 100%;}
+.tc{text-align: center;}
+
+
+/* ******************header******************/
+
+header {width: 100%; margin: auto;  position: relative; margin-bottom: 5em;}
+
+nav {background-color: #333; opacity: 0.8; position: fixed; color: #fff; z-index: 10; height: 4em; display: flex; justify-content: space-between;}
+nav h1 {font-size: 2em; text-align: center; line-height: 1.6em; }
+
+nav ul.menu {display: flex; padding-right: 5em; }
+nav ul.menu li {justify-content: space-between; padding: 2em 1.5em; letter-spacing: 0.3em; font-size: 0.8em; opacity: 0.8;}
+nav ul.menu .fa-angle-down {font-size: 1em; padding-left: 0.5em;}
+nav ul.menu li:nth-child(1){opacity: 1;}
+nav ul.menu li:hover {opacity: 1;}
+
+nav ul.menu .search {position: absolute; right: 1em; top: 1.5em; opacity: 0.8;}
+nav ul.menu .search .bt-search {font-size: 1em;}
+
+.header-wrapper {position: relative;}
+.header-wrapper .swiper-pagination-bullet {background-color: inherit; border: 1px solid #fff; opacity: 1; width: 0.7em; height: 0.7em;;}
+.header-wrapper .swiper-pagination {margin-bottom: 1.2em;}
+.header-wrapper .swiper-pagination-bullet-active {background: #fff;}
+.header-wrapper .mb-wrapper {position: absolute; bottom: 3em; left: 50%; transform: translateX(-50%); color: #fff;}
+.header-wrapper .mb-wrapper .title {font-size: 1.3em;  letter-spacing: 0.5em; margin-bottom: 1em;}
+.header-wrapper .mb-wrapper .summary {font-size: 1em; margin-bottom: 1em;}
+
+.swiper-button-next{color: #fff;}
+.swiper-button-prev{color: #fff;}
+
+
+
+/* *****************  main-wrapper ******************/
+.main-wrapper{margin-bottom: 5em; }
+.main-wrapper h3{font-size: 1.3em; letter-spacing: 0.6em; margin-bottom: 2em;}
+.main-wrapper em{width: 100%; display: inline-block; color: #777; margin-bottom: 1.5em;}
+.main-wrapper p{display: inline-block; width: 70%; color: #777; line-height: 1.4em;}
