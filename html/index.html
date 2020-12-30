@@ -13,7 +13,21 @@
 	<script src="../js/swiper-bundle.min.js"></script>
 </head>
 <body>
-	<header>
+<!-- <div class="tk-modal">
+<div class="tk">
+	<p><i class="fa fa-shopping-bag" aria-hidden="true"></i>Tickets</p>
+	<button>X</button>
+</div>
+<p class="pers"><i class="fa fa-shopping-cart" aria-hidden="true"></i></p>
+<input type="text" placeholder="How many?">
+<p class="send"><i class="fa fa-user" aria-hidden="true"></i></p>
+<input type="email" placeholder="Enter email">
+<button class="pay">pay <i class="fa fa-check" aria-hidden="true"></i></button>
+<button class="cancel"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+<p class="nedd">Need <strong>Help?</strong></p>
+</div> -->
+
+<header class="mw-100">
 		<nav class="w-100">
 			<h1>Logo</h1>
 			<ul class="menu">
@@ -22,15 +36,14 @@
 				<li><a href="#">TOUR</a></li>
 				<li><a href="#">CONTACT</a></li>
 				<li><a href="#">MORE<i class="fa fa-angle-down"></i></a></li>
-			<div class="search">
 				<a href="#" class="bt-search"><i class="fa fa-search"></i></a>
-			</div><!-- search -->	
+				<i class="fa fa-bars bars" aria-hidden="true"></i>
 			</ul>
 		</nav>
 		<div class="header-wrapper swiper-container">
 			<div class="banner-wrapper swiper-wrapper">
 				<div class="banner-wrap swiper-slide">
-					<img src="../img/chicago.jpg"배너" class="img w-100">
+					<img src="../img/chicago.jpg" alt="배너" class="img w-100">
 					<div class="mb-wrapper">
 							<div class="title tc">CHICAGO</div>
 							<p class="summary tc">Thank you, Chicago - A night we won't forget.</p>
@@ -56,14 +69,148 @@
 			
 		<div class="swiper-pagination"></div>
 		</div><!-- swiper-container -->
-	</header><!-- header -->
+</header><!-- header -->
 	
-	<div class="main-wrapper tc">
+<div class="main-wrapper wrapper">
+	<div class="text-wrapper tc wrapper">
 		<h3>THE BAND</h3>
 		<em>We love music!</em>
 		<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div><!-- text-wrapper -->
+	<div class="name-wrapper wrapper-sm">
+		<div class="main-wrap tc">
+			<p class="name">Name</p>
+			<img src="../img/bandmember.jpg" alt="man" class="main-round">
+			<ul class="name-p name1">
+				<li>Guitarist and Lead Vocalist</li>
+				<li>Loves long walks on the beach</li>
+				<li>Member since 1988</li>
+			</ul>
+		</div><!-- main-wrap -->
+		<div class="main-wrap tc">
+			<p class="name">Name</p>
+			<img src="../img/bandmember.jpg" alt="man" class="main-round">
+			<ul class="name-p name2">
+				<li>Drummer</li>
+				<li>Loves drummin'</li>
+				<li>Member since 1988</li>
+			</ul>
+		</div>
+		<div class="main-wrap tc">
+			<p class="name">Name</p>
+			<img src="../img/bandmember.jpg" alt="man" class="main-round">
+			<ul class="name-p name3">
+				<li>Bass player</li>
+				<li>Loves math</li>
+				<li>Member since 2005</li>
+			</ul>
+		</div>
+	</div><!-- name-wrapper -->
 </div><!-- main-wrapper -->
 
-	<script src="../js/index.js"></script>
+<div class="tour-wrapper">
+	<div class="tourwrapper wrapper">
+		<div class="text-wrapper tc">
+			<h3>TOUR DATES</h3>
+			<p>Lorem ipsum we'll play you some music.</p>
+			<p>Remember to book your tickets!</p>
+		</div><!-- text-wrapper -->
+		<div class="email-wrapper tc wrapper-sm">
+			<input type="text" placeholder="September" class="w-100">
+			<div class="sold sold1">Sold Out!</div>
+			<input type="text" placeholder="October" class="w-100">
+			<div class="sold  sold2">Sold Out!</div>
+			<input type="text" placeholder="November" class="w-100">
+			<div class="num">3</div>
+		</div><!-- email-wrapper -->
+		<div class="tour-wrap wrapper-sm">
+			<div class="tour-img-wrapper tc wrapper">
+				<div class="tour-img-wrap">
+					<img src="../img/paris.jpg" alt="paris" class="w-100">
+					<div class="text-wrap">
+						<h4>Paris</h4>
+						<p>Friday 27 November 2015</p>
+						<button class="buy">Buy Tickets</button>
+					</div><!-- text-wrap -->
+				</div><!-- tour-img-wrap -->
+			</div><!-- tour-img-wrapper -->
+			<div class="tour-img-wrapper tc wrapper">
+				<div class="tour-img-wrap">
+					<img src="../img/newyork.jpg" alt="newyork" class="w-100">
+					<div class="text-wrap">
+						<h4>New York</h4>
+						<p>Saturday 28 November 2015</p>
+						<button class="buy">Buy Tickets</button>
+					</div><!-- text-wrap -->
+				</div><!-- tour-img-wrap -->
+			</div><!-- tour-img-wrapper -->
+			<div class="tour-img-wrapper tc wrapper">
+				<div class="tour-img-wrap">
+					<img src="../img/sanfran.jpg" alt="sanfran" class="w-100">
+					<div class="text-wrap">
+						<h4>San Francisco</h4>
+						<p>Sunday 29 November 20155</p>
+						<button class="buy">Buy Tickets</button>
+					</div><!-- text-wrap -->
+				</div><!-- tour-img-wrap -->
+			</div><!-- tour-img-wrapper -->
+		</div>
+	</div>
+</div><!-- tour-wrapper -->
+
+<div class="contact-wrapper wrapper-sm">
+	<div class="text-wrapper tc">
+		<h3>Contact</h3>
+		<p>We love our fans!</p>
+	</div><!-- text-wrapper -->
+<div class="c-wrapper wrapper">
+	<ul class="title">
+		<li>Fan? Drop a note.</li>
+		<li><i class="fa fa-map-marker" aria-hidden="true"></i>Chicago, US</li>
+		<li><i class="fa fa-mobile" aria-hidden="true"></i>Phone: +00 1515151515</li>
+		<li><i class="fa fa-envelope" aria-hidden="true"></i>Email: mail@mail.com</li>
+	</ul><!-- title -->
+	<div class="cin">
+		<div class="c-input">
+			<input type="text" placeholder="Name" class="c-name">
+			<input type="email" placeholder="Email" class="c-email">
+		</div><!-- c-input -->
+		<div class="c-com"><input type="text" placeholder="comment" class="c-comment"></div>
+	</div>
+</div><!-- c-wrapper -->
+<button class="c-bt">send</button>
+</div><!-- contact-wrapper -->
+
+<div class="blog-wrapper wrapper-sm">
+	<div class="text-wrapper tc">
+		<h3>From The Blog</h3>
+	</div><!-- text-wrapper -->
+	<div class="blog-text">
+		<h2 class="h2mike tc on">Mike</h2>
+		<ul class="mike w-100 on">
+			<li class="big w-100">Mike Ross, Manager</li>
+			<li class="small w-100">Man, we've been on the road for some time now. Looking forward to lorem ipsum.</li>
+		</ul>
+		<h2 class="h2chler tc">Chandler</h2>
+		<ul class="chandler w-100">
+			<li class="big w-100">Chandler Bing, Guitarist</li>
+			<li class="small w-100">Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?.</li>
+		</ul>
+		<h2 class="h2pet tc">Peter</h2>
+		<ul class="peter w-100">
+			<li class="big w-100">Peter Griffin, Bass player</li>
+			<li class="small w-100">I mean, sometimes I enjoy the show, but other times I enjoy other things.</li>
+		</ul>
+	</div><!-- blog-text -->
+</div><!-- blog-wrapper -->
+<div class="img">
+	<img src="../img/map.jpg" alt="map" class="map w-100">
+	<a href="#" class="bt-down tc"><i class="fa fa-angle-up bt-down" aria-hidden="true"></i></a>
+	<p class="adr tc">Bootstrap Theme Made By<a href="#" class="w3s">www.w3schools.com</a></p>
+</div><!-- img -->
+<p class="visit"><a href="#" class="v">Visit w3schools</a></p>
+
+
+<script src="../js/index.js"></script>
 </body>
 </html>

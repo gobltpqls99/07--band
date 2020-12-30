@@ -1,36 +1,49 @@
 /************ 공통사항 *************/
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans&family=Overpass:wght@100;200;300;400;600&display=swap'); 
-/* 
-font-family: 'DM Serif Display', serif;
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Overpass', sans-serif;
-*/
 * {box-sizing: border-box;}
 html, body {position: relative;}
 ul,li {list-style: none;}
 a {text-decoration: none;  color: inherit;}
 b, strong {font-weight: bold;}
 
+.wrapper-sm {max-width: 1000px; margin: auto;}
+.wrapper {max-width: 1200px; margin: auto; overflow: hidden;}
 .w-100 {width: 100%;}
 .mw-100 {max-width: 100%;}
+
 .tc{text-align: center;}
+
+
+/* ******************modal******************/
+.tk-modal{}
+.tk-modal .tk{}
+.tk-modal .tk {}
+
+
+
+
+
+
 
 
 /* ******************header******************/
 
-header {width: 100%; margin: auto;  position: relative; margin-bottom: 5em;}
+header {position: relative;}
 
-nav {background-color: #333; opacity: 0.8; position: fixed; color: #fff; z-index: 10; height: 4em; display: flex; justify-content: space-between;}
-nav h1 {font-size: 2em; text-align: center; line-height: 1.6em; }
+.banner-wrap .img {display: block; height: auto;}
 
-nav ul.menu {display: flex; padding-right: 5em; }
-nav ul.menu li {justify-content: space-between; padding: 2em 1.5em; letter-spacing: 0.3em; font-size: 0.8em; opacity: 0.8;}
+nav {background-color: #333; opacity: 0.8; position: fixed; color: #fff; z-index: 100; height: 4em; display: flex; justify-content: space-between;}
+nav h1 {padding: 0.45em 0.5em; font-size: 2em; text-align: center;}
+
+nav ul.menu {display: flex; padding-right: 2.5em; }
+nav ul.menu li {justify-content: space-between; padding: 2em 1.5em; letter-spacing: 0.3em; font-size: 0.75em; opacity: 0.7;}
 nav ul.menu .fa-angle-down {font-size: 1em; padding-left: 0.5em;}
 nav ul.menu li:nth-child(1){opacity: 1;}
 nav ul.menu li:hover {opacity: 1;}
 
-nav ul.menu .search {position: absolute; right: 1em; top: 1.5em; opacity: 0.8;}
-nav ul.menu .search .bt-search {font-size: 1em;}
+nav ul.menu .bt-search {font-size: 0.9em; position: absolute; right: 1em; top: 1.5em; opacity: 0.7;}
+nav ul.menu .bars{font-size: 1.5em; position: absolute; right: 1em; top: 0.85em; display: none;}
+
+
 
 .header-wrapper {position: relative;}
 .header-wrapper .swiper-pagination-bullet {background-color: inherit; border: 1px solid #fff; opacity: 1; width: 0.7em; height: 0.7em;;}
@@ -46,7 +59,141 @@ nav ul.menu .search .bt-search {font-size: 1em;}
 
 
 /* *****************  main-wrapper ******************/
-.main-wrapper{margin-bottom: 5em; }
-.main-wrapper h3{font-size: 1.3em; letter-spacing: 0.6em; margin-bottom: 2em;}
-.main-wrapper em{width: 100%; display: inline-block; color: #777; margin-bottom: 1.5em;}
-.main-wrapper p{display: inline-block; width: 70%; color: #777; line-height: 1.4em;}
+.main-wrapper{padding-bottom: 8em; position: relative;}
+.text-wrapper{padding-bottom: 5em; }
+.text-wrapper h3{padding-top: 3em; font-size: 1.3em; letter-spacing: 0.6em; margin-bottom: 1.7em;}
+.text-wrapper em{width: 100%; display: inline-block; color: #777; margin-bottom: 1.5em;}
+.text-wrapper p{display: inline-block; width: 75%; color: #777; line-height: 1.4em;}
+
+.main-wrapper .name-wrapper {width: 80%; margin: auto; display: flex;}
+.main-wrapper .name-wrapper .main-wrap{width: 33.3333%;}
+.main-wrapper .name-wrapper .main-wrap .name{margin-bottom: 3em; color: #777; letter-spacing: -0.05em;}
+
+
+.main-wrapper .name-wrapper .main-wrap .name-p{display: none; margin-top: 1em;}
+.main-wrapper .name-wrapper .main-wrap .name-p > li{padding-top: 1.4em; color: #777; font-size: 0.9em;}
+
+.main-wrapper .name-wrapper .main-wrap .main-round {width: 70%; border: 1px solid #eaeaea; border-radius: 50%; opacity: 0.6;}
+.main-wrapper .name-wrapper .main-wrap .main-round:hover{border: 10px solid rgba(0,0,0,0.07);}
+
+
+
+
+
+
+/* *****************  tour-wrapper ******************/
+.tour-wrapper{background-color: rgb(36, 36, 36); color: #fff;padding-bottom: 5em; flex-wrap: wrap;}
+.email-wrapper{position: relative; margin-bottom: 3em;}
+.email-wrapper input{width:97%; border: 0; padding: 1em 1em; border-bottom: 1px solid #eee;}
+
+.email-wrapper .sold{background-color: rgb(204, 49, 49); border-radius: 2px; position: absolute; left: 15%; font-size: 0.8em; padding: 0.3em;}
+.email-wrapper .sold1{position: absolute; top: 1.4em;}
+.email-wrapper .sold2{position: absolute; top: 5.3em;}
+.email-wrapper .num{background-color: gray; width: 1.5em; height: 1.7em; border-radius: 50%; font-size: 0.8em; line-height: 1.7; position: absolute; left: 96%; bottom: 0.8em;}
+
+.tour-wrap {display: flex; justify-content: center; flex-wrap: wrap;}
+.tour-wrap .tour-img-wrapper {flex: 33.3333% 0 0;}
+.tour-wrap .tour-img-wrapper .tour-img-wrap{ padding: 0 1em;}
+.tour-wrap .tour-img-wrapper .tour-img-wrap > img{}
+.tour-wrap .tour-img-wrapper .tour-img-wrap .text-wrap{background-color: #fff; color: #111;}
+.tour-wrap .tour-img-wrapper .tour-img-wrap .text-wrap h4{padding: 1.5em;}
+.tour-wrap .tour-img-wrapper .tour-img-wrap .text-wrap p{padding-bottom: 2em; color: #777;}
+.tour-wrap .tour-img-wrapper .tour-img-wrap .text-wrap button.buy{border: 1px solid rgb(24, 24, 24); background-color: rgb(24, 24, 24); margin-bottom: 1.5em; padding: 0.9em 3em; color: #fff; font-size: 0.8em;}
+.tour-wrap .tour-img-wrapper .tour-img-wrap .text-wrap button.buy:hover{background-color: #fff; color: #111; transition: all 0.3s;}
+
+
+/* *****************  contact-wrapper******************/
+.contact-wrapper{margin-bottom: 5em; position: relative;}
+.contact-wrapper .text-wrapper{margin-bottom: 1.2em;}
+
+.c-wrapper{display: flex; justify-content: space-between;}
+
+ul.title{flex: 30% 0 0; color: #888888;}
+ul.title li{padding: 0.5em 0;}
+ul.title li i{padding-right: 0.2em;}
+
+
+.cin{flex: 65% 0 0; font-size: 0.9em;}
+.cin .c-input {margin-bottom: 1em;}
+.cin .c-input > .c-name{border: 1px solid #ddd; width: 48%; height: 30px; padding: 0 1em;} 
+.cin .c-input > .c-email{ margin-left: 1em; border: 1px solid #ddd; width:48%; height: 30px; padding: 0 1em;}
+.cin .c-com{width: 100%;}
+.cin .c-com >.c-comment{width: 100%; height: 150px; border: 1px solid #ddd; padding: 0 1em;}
+
+.c-bt{border: 0; background-color: rgb(51, 51, 51); padding: 0.7em 1.3em; color: #fff; position: absolute; right: 0; bottom: -3em;}
+
+
+
+/* ***************** blog-wrapper ******************/
+
+.blog-wrapper{height: 30em; padding-bottom: 5em;}
+.blog-wrapper .blog-text{position: relative;}
+
+.blog-text ul{position: absolute; top: 0; left: 0; display: none;}
+
+.blog-wrapper h2{width: 5em; height: 2.7em; padding-top: 0.8em; cursor: pointer;  z-index: 1; color: #666;}
+.blog-text .h2mike {position: absolute; left: 0; top: 0;}
+.blog-text .h2chler{position: absolute; left: 5.1em; top: 0;}
+.blog-text .h2pet{position: absolute; left: 10.1em; top: 0;}
+.blog-wrapper .big{margin-top: 1.3em; display: inline-block; font-size: 2em; padding-top: 0.7em; border-top: 1px solid #eee; position: relative; color: #999; font-weight: 100;}
+.blog-wrapper .small{display: inline-block; padding-top: 1em; color: #999; }
+.blog-text h2:hover{background-color: #eee; border-radius: 0.7em 0.7em 0 0; }
+
+.blog-text h2.on{display: block; background-color: #fff; border: 1px solid #eee; border-radius: 0.7em 0.7em 0 0; border-bottom: 0;}
+.blog-text ul.on{display: block;}
+
+
+
+/* img */
+.img{width: 100%; height: auto;  background-color: rgb(51, 51, 51); position: relative;}
+/* .map{width: 100%;} */
+
+.bt-down {display: inline-block; width: 100%; font-size: 1.5em; margin-top: 1em;}
+
+.img .adr{color: #fff; padding-bottom: 3em; padding-top: 1em;}
+.img .adr .w3s:hover{color: #666;}
+/* visit */
+.visit {padding: 0.5em; font-size: 0.9em; border-radius: 0.2em; background-color: #111; position: absolute; bottom: 5.7em; left: 57em; z-index: 20; color: #fff; display: none;}
+
+
+
+
+
+/************ 반응형 *************/
+@media screen and (max-width: 1199px) {
+	.email-wrapper input{width: 96%;}
+	.email-wrapper .sold{position: absolute; left: 15%;}
+	.email-wrapper .num{position: absolute; left: 95%;}
+}
+
+@media screen and (max-width: 991px) {
+	.blog-wrapper{width: 70%;}
+
+	.c-wrapper{display: block; width: 70%;}
+	ul.title{display: inline-block; margin: auto; width: 100%; margin-bottom: 1em;}
+	.c-input{display: block;  width: 100%;}
+	.cin .c-input > .c-name{display: block;  width: 100%; margin-bottom:1em;}
+	.cin .c-input > .c-email{display: block;  width: 100%; margin-left: 0;}
+	.c-bt{ position: absolute; right: 15%;}
+}
+
+@media screen and (max-width: 767px) {
+	nav ul.menu {display: none;}
+
+	.main-wrapper .name-wrapper {width: 100%; display: block;}
+	.main-wrapper .name-wrapper .main-wrap{width: 65%; margin: auto;margin-bottom: 5em;}
+	.email-wrapper input{width: 70%;}
+	.email-wrapper .sold{position: absolute; left: 32%;}
+	.email-wrapper .num{position: absolute; left: 80%;}
+	.tour-wrap {display: block; width: 75%;}
+	.tour-wrap .tour-img-wrapper .tour-img-wrap{margin-bottom: 2em;}
+
+
+
+	.img{height: 550px;}
+	.img .adr{color: #fff; padding-top: 6.5em;}
+}
+
+@media screen and (max-width: 575px) {
+	
+}
