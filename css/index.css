@@ -152,6 +152,9 @@ ul.title li i{padding-right: 0.2em;}
 
 .img .adr{color: #fff; padding-bottom: 3em; padding-top: 1em;}
 .img .adr .w3s:hover{color: #666;}
+
+
+.img .adr .w3s{position: relative;}
 /* visit */
 .visit {padding: 0.5em; font-size: 0.9em; border-radius: 0.2em; background-color: #111; position: absolute; bottom: 5.7em; left: 57em; z-index: 20; color: #fff; display: none;}
 
